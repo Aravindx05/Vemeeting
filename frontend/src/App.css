@@ -16,7 +16,7 @@
 }
 
 .landingPageContainer nav h1{
-  font-size: 10rem;
+  font-size: 12rem;
   font-weight: 500;
 }
 
@@ -29,4 +29,32 @@
 .landingPageContainer nav .navlist p{
   font-size: 3.9rem;
   font-weight: 400;
+}
+
+.landingMainContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  padding-inline: 3rem ;
+}
+
+.landingMainContainer >div:nth-child(1){
+  font-size: 5rem;
+}
+.landingMainContainer >div:nth-child(1) button{
+  margin-top: 4rem;
+  width: fit-content;
+  padding: 3.5rem 5rem;
+  font-size: 4.5rem;
+  background-color: #FF9839;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+.landingMainContainer >div:nth-child(2) img{
+  height: 70vh;
+  width: auto;
 }
