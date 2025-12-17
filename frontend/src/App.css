@@ -1,60 +1,98 @@
-.landingPageContainer {
-    width: 100vw;
-    height: 100vh;
-    background:url('/landingpage.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+* {
+  box-sizing: border-box;
 }
 
-.landingPageContainer nav{
-  padding-inline: 9.2rem;
-  padding-block: 7.6rem;
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* ---------- LANDING PAGE ---------- */
+
+.landingPageContainer {
+  width: 100vw;
+  height: 100vh;
+  background: url('/landingpage.png') no-repeat center;
+  background-size: cover;
+  color: white;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.landingPageContainer nav {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.landingPageContainer nav h1{
-  font-size: 12rem;
+.landingPageContainer nav h1 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 500;
 }
 
-.landingPageContainer nav .navlist{
+.landingPageContainer nav .navlist {
   display: flex;
-  gap: 9.6rem;
+  gap: clamp(1.2rem, 3vw, 3rem);
   cursor: pointer;
 }
 
-.landingPageContainer nav .navlist p{
-  font-size: 3.9rem;
+.landingPageContainer nav .navlist p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: 400;
 }
 
-.landingMainContainer{
+/* ---------- MAIN SECTION ---------- */
+
+.landingMainContainer {
+  max-width: 1450px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80vh;
-  padding-inline: 3rem ;
+  height: calc(100vh - 120px);
+  padding: clamp(1.5rem, 4vw, 3rem);
 }
 
-.landingMainContainer >div:nth-child(1){
-  font-size: 5rem;
+.landingMainContainer > div:nth-child(1) {;
+  max-width: 600px;
 }
-.landingMainContainer >div:nth-child(1) button{
-  margin-top: 4rem;
-  width: fit-content;
-  padding: 3.5rem 5rem;
-  font-size: 4.5rem;
+
+.landingMainContainer > div:nth-child(1) p{
+  font-size:25px;
+}
+
+.landingMainContainer > div:nth-child(1) button {
+  margin-top: 2rem;
+  padding: 0.9rem 1.8rem;
+  font-size: 1.1rem;
   background-color: #FF9839;
   border: none;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   color: white;
 }
 
-.landingMainContainer >div:nth-child(2) img{
-  height: 70vh;
+/* ---------- IMAGE ---------- */
+
+.landingMainContainer > div:nth-child(2) img {
+  height: clamp(350px, 55vh, 520px);
   width: auto;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+  .landingMainContainer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .landingMainContainer img {
+    height: 35vh;
+  }
 }

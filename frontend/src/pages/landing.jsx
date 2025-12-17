@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Landing() {
+export default function LandingPage() {
     return (
         <div className="landingPageContainer">
            <nav>
             <div className="navHeader">
-                <h1>Vemeeting</h1>
+                <h1>Vemeet</h1>
             </div>
             <div className="navlist">
                 <p>Join as Guest</p>
@@ -19,12 +19,12 @@ export default function Landing() {
            <div className="landingMainContainer">
             <div>
                 <h1><span style={{color:"#FF9839"}}>Connect</span> with your loved Ones</h1>
-                <p>Cover a distance by Vemeeting</p>
+                <p>Cover a distance by Vemeet</p>
                 {/* <div>
                     <button>Get Started</button>
                 </div> */}
                 <div>
-                    <Link to="/home">
+                    <Link to="/auth">
                         <button>Get Started</button>
                     </Link>
                 </div>
