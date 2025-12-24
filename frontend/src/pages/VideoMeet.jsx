@@ -383,7 +383,7 @@ export default function VideoMeetComponent() {
     }
 
     let handleVideo = () => {
-        setVideo(!video);
+        setVideo(!video)
         //getUserMedia();
     }
     let handleAudio = () => {
@@ -405,7 +405,7 @@ export default function VideoMeetComponent() {
             let tracks = localVideoref.current.srcObject.getTracks()
             tracks.forEach(track => track.stop())
         } catch (e) { }
-        window.location.href = "/home"
+        window.location.href = "/home";
     }
 
     let openChat = () => {
